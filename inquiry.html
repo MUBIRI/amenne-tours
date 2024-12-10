@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenne Tours and travel</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link hello -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div class="logo">
+            <a href="#" class="logo"></href><img src="img/amennelog.jpg" alt="Amenne Tours and travel"></a>
+        </div>
+    
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index.html">home</a>
+            <a href="http://127.0.0.1:5500/inquiry.html">book</a>
+            <a href="http://127.0.0.1:5500/attraction.html">packages</a>
+            <a href="http://127.0.0.1:5500/index.html#services">services</a>
+            <a href="http://127.0.0.1:5500/gallery.html">gallery</a>
+            <a href="http://127.0.0.1:5500/index.html#review">review</a>
+            <a href="http://127.0.0.1:5500/contact.html">contact</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <!--<i class="fas fa-user" id="login-btn"></i>-->
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "2nF6CNRp5Lyjlxjn2",
+      });
+   })();
+</script>
+<script src="book.js"></script>
+    
+    </header>
+    <!-- book section starts  -->
+<div class="spacer"></div>
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="img/reservation.webp" alt="">
+        </div>
+
+        <form id="bookingForm">
+            <div class="inputBox">
+                <h3>Where to</h3>
+                <input type="text" name="place" placeholder="Place name" required>
+            </div>
+            <div class="inputBox">
+                <h3>How many</h3>
+                <input type="number" name="guests" placeholder="Number of guests" required>
+            </div>
+            <div class="inputBox">
+                <h3>Arrivals</h3>
+                <input type="date" name="arrival" required>
+            </div>
+            <div class="inputBox">
+                <h3>Leaving</h3>
+                <input type="date" name="leaving" required>
+            </div>
+            <h3>Accommodation Style</h3>
+            <label>
+                <input type="radio" name="accommodation" value="Luxury Living" checked> Luxury Living
+            </label>
+            <label>
+                <input type="radio" name="accommodation" value="Semi Luxury Living"> Semi Luxury Living
+            </label>
+            <label>
+                <input type="radio" name="accommodation" value="Budget Living"> Budget Living
+            </label>
+            <button type="submit" onclick="sendMail" class="btn">Book Now</button>
+        </form>
+        
+
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Explore unforgettable safaris with Amenne Tours and Travel expert guides, tailored adventures, and a commitment to conservation. Let the wild call you home.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Uganda</a>
+           
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="http://127.0.0.1:5500/index.html">home</a>
+            <a href="http://127.0.0.1:5500/inquiry.html">book</a>
+            <a href="http://127.0.0.1:5500/attraction.html">packages</a>
+            <a href="http://127.0.0.1:5500/index.html#services">services</a>
+            <a href="http://127.0.0.1:5500/gallery.html">gallery</a>
+            <a href="http://127.0.0.1:5500/index.html#review">review</a>
+            <a href="http://127.0.0.1:5500/contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/profile.php?id=61569644859970">facebook</a>
+            <a href="https://www.instagram.com/amennetours/">instagram</a>
+            <a href="https://x.com/home?lang=en">twitter</a>
+            <a href="https://www.linkedin.com/feed/">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> robert mubiri </span> | all rights reserved! </h1>
+
+</section>
+
+</body>

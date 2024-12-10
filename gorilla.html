@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="places.css">
+
+    <style>
+        .carousel { position: relative; }
+        .carousel-dots { display: flex; justify-content: center; }
+        .details-images1, .details-images2, .details-images3, .details-images4 { display: inline-block; margin: 5px; text-align: center; }
+        .images-position { height: 50px; width: 50px; object-fit: cover; }
+        .product-dtl { font-family: Arial, sans-serif; }
+        .rate { display: flex; gap: 5px; }
+        /*.line-through { text-decoration: line-through; color: gray; } */
+        .colour1 { color: #ff4500; }
+        .booknowbutton { display: inline-block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div class="logo">
+            <a href="#" class="logo"></href><img src="img/amennelog.jpg" alt="Amenne Tours and travel"></a>
+        </div>
+    
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index.html">home</a>
+            <a href="http://127.0.0.1:5500/inquiry.html">book</a>
+            <a href="http://127.0.0.1:5500/attraction.html">packages</a>
+            <a href="http://127.0.0.1:5500/index.html#services">services</a>
+            <a href="http://127.0.0.1:5500/gallery.html">gallery</a>
+            <a href="http://127.0.0.1:5500/index.html#review">review</a>
+            <a href="#http://127.0.0.1:5500/contact.html">contact</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <!--<i class="fas fa-user" id="login-btn"></i>-->
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+        <div class="spacer"></div>
+
+    <br>
+    <div class="pd-wrap">
+        <div class="container">
+            <div class="row center123">
+                <div class="col-md-6">
+                    <div>
+                        <div class="carousel caro1">
+                            <ul class="slides">
+                                <li class="slide-container">
+                                    <div class="slide-image">
+                                        <img src="img/gorilla-trekking-uganda-adult-infant.avif" alt="Image 1">
+                                    </div>
+                                    <div class="carousel-controls">
+                                        <label for="img-5" class="prev-slide"><span>&lsaquo;</span></label>
+                                        <label for="img-2" class="next-slide"><span>&rsaquo;</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-dtl">
+                        <div class="product-info">
+                            <div class="product-name"><b>Amazing Safari Adventure</b></div>
+                            <div class="reviews-counter">
+                                <span><h2>check our safari overview, inclusives and activities</h2></span>
+                            </div>
+                            <div class="product-price-discount">
+                                <span>$2950.00</span> - <span class="">$6730</span> -/ tourist
+                            </div>
+                        </div>
+                        <div class="details-images">
+                            <div><img class="images-position" src="img/accomodation.png" alt="Accomodation"><p>Accommodation</p></div>
+                            <div><img class="images-position" src="img/campfire.jpeg" alt="Activities"><p>Activities</p></div>
+                            <div><img class="images-position" src="img/guide1.jpeg" alt="Guide"><p>Guidance</p></div>
+                        </div>
+                        <form action="/booknow" method="post" class="booknowbutton">
+                            <a href="http://127.0.0.1:5500/inquiry.html>"
+                            <button type="submit" class="btn btn-warning">Book Now</button>
+                            </a>
+                        </form>
+                        <a href="https://wa.me/256759465230" class="booknowbutton">
+                            <button type="button" class="btn btn-success">Whatsapp</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#itinerary">Itinerary</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#inclusions">Inclusions</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#exclusions">exclusions</a></li>
+                    
+                </ul>
+                <div class="tab-content">
+                    <div id="overview" class="tab-pane fade show active"><p>Embark on a thrilling 4-day journey into the heart of Uganda's Bwindi Impenetrable Forest, one of the world’s premier destinations for mountain gorilla trekking. This adventure offers the rare opportunity to track and observe endangered gorillas in their natural habitat, surrounded by stunning landscapes and vibrant local culture.</p></div>
+                    <div id="itinerary" class="tab-pane fade"><p>
+                        <b>Day 1: Arrival in Uganda & Transfer to Bwindi</b><br>
+Morning: Arrive in Entebbe..
+Afternoon: Transfer to Bwindi Impenetrable Forest (6-8 hours from Entebbe, or 4 hours from Kigali). Enjoy the scenic views en route.
+Evening: Arrive at your lodge near Bwindi, relax, and prepare for your trekking adventure.<br>
+<b>Day 2: Gorilla Trekking in Bwindi</b><br>
+Morning: After an early breakfast, head to the park headquarters for a briefing.
+Gorilla Trekking: Embark on a guided trek through the forest to track the mountain gorillas. This can take 2 to 8 hours, depending on the location of the gorillas.
+Afternoon: After spending one hour with the gorillas, return to the lodge for relaxation and a well-deserved meal.
+Evening: Option to engage in cultural activities or a nature walk nearby.<br>
+<b>Day 3: Explore Bwindi & Community Experience</b><br>
+Morning: After breakfast, enjoy a guided nature walk in the forest or take a community visit to the Batwa or Bakiga villages to learn about the local culture and traditions.
+Afternoon: Visit the nearby Ishasha sector (optional) to view the famous tree-climbing lions or go on a game drive.
+Evening: Return to the lodge for a relaxing evening.<br>
+<b>Day 4: Departure</b><br>
+Morning: After breakfast, depart Bwindi and travel back to Entebbe.
+Afternoon: Depending on your flight schedule, you may have time to explore a local market or enjoy a meal before your flight.
+Evening: Fly back to your home destination.</p>
+                    </div>
+                    <div id="inclusions" class="tab-pane fade"><p>our trip includes the following</p>
+                        <ul>
+                            <li>Park fees (For non-residents)</li>
+                            <li>Gorilla permits (One per person, non-resident)</li>
+                            <li>All activities (Unless labeled as optional</li>
+                            <li>All accommodation (Unless listed as upgrade)</li>
+                            <li>A professional driver/guide</li>
+                            <li>All transportation(Unless labeled as optional)</li>
+                            <li>All Taxes/VAT</li>
+                            <li>Roundtrip airport transfer</li>
+                            <li>Meals and drinks(As specified in the day-by-day section)</li>
+                        </ul>
+                    </div>
+                    <div id="exclusions" class="tab-pane fade"><p>out trip does not include the following</p>
+                        <ul>
+                            <li>International flights (From/to home)</li>
+                            <li>Additional accommodation before and at the end of the tour</li>
+                            <li>Tips (Tipping guideline US$10.00 pp per day)</li>
+                            <li>Personal items (Souvenirs, travel insurance, visa fees, etc.)</li>
+                            <li>Government imposed increase of taxes and/or park fees</li>
+                            <li>Some meals(As specified in the day-by-day section)</li>
+                            
+                        </ul>
+                    
+                    </div>
+                    <div id="inclusions" class="tab-pane fade"><p>Inclusions go here.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>Explore unforgettable safaris with Amenne Tours and Travel expert guides, tailored adventures, and a commitment to conservation. Let the wild call you home.</p>
+                </div>
+                <div class="box">
+                    <h3>branch locations</h3>
+                    <a href="#">Uganda</a>
+                   
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="http://127.0.0.1:5500/index.html">home</a>
+                    <a href="http://127.0.0.1:5500/inquiry.html">book</a>
+                    <a href="http://127.0.0.1:5500/attraction.html">packages</a>
+                    <a href="http://127.0.0.1:5500/index.html#services">services</a>
+                    <a href="http://127.0.0.1:5500/gallery.html">gallery</a>
+                    <a href="http://127.0.0.1:5500/index.html#review">review</a>
+                    <a href="http://127.0.0.1:5500/contact.html">contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="https://www.facebook.com/profile.php?id=61569644859970">facebook</a>
+                    <a href="https://www.instagram.com/amennetours/">instagram</a>
+                    <a href="https://x.com/home?lang=en">twitter</a>
+                    <a href="https://www.linkedin.com/feed/">linkedin</a>
+                </div>
+        
+            </div>
+        
+            <h1 class="credit"> created by <span> robert mubiri </span> | all rights reserved! </h1>
+        
+        </section><!-- Add footer content here -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
