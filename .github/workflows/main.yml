@@ -26,4 +26,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./ # Adjust this to the directory you want to deploy
-          server-dir: /public_html # Adjust this to the remote directory
+          server-dir: /public_html/ # Adjust this to the remote directory
